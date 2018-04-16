@@ -1,0 +1,170 @@
+<!doctype html>
+<html style="overflow: hidden;">
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SS</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+h1
+{
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    font-size: 50px;  
+}
+body
+{
+    background-image: url("http://i65.tinypic.com/15mxvmf.jpg");
+    background-size: 100%;
+    //opacity: 0.9;
+}
+input[type=password], select {
+    width: 40%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background:transparent;
+    box-sizing: border-box;
+}
+input[type=text]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background:transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#ar{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 25%%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.mani
+{   width: 50%;
+    //height:200px;
+    margin: 0 auto;
+    margin-left:400px;
+}​
+#nav {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+}
+.container {
+    padding: 2px 16px;
+}
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 20px;
+  pointer-events: none;
+}
+.end{
+    background-color:black;
+    height:74px;
+    text-align:center;
+
+
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 3px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 25px; }
+
+</style>
+<script type="text/javascript">
+    function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+</head>
+<body>
+    <br><br>
+    <nav class="navbar navbar-inverse navbar-fixed-top" ><!--color-->
+    <div class="container-fluid">
+    <div class="navbar-header">
+            <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target="#nvb">
+                   <span class = "icon-bar"></span>
+                   <span class = "icon-bar"></span>
+                   <span class = "icon-bar"></span>
+            </button>
+      <a class="navbar-brand" href="index.html">
+              <span style = "color:white"><span style = "color:red">S</span>outhern<span style = "color:red">S</span>picia</span>
+          </a>
+
+    </div>
+          <div class = "collapse navbar-collapse" id = "nvb">
+            <ul class="nav navbar-nav navbar-right" >
+             
+              
+              <li style="font-family: chiller;font-size: 20px;"><a  href="signup.html"><span class="glyphicon glyphicon-new-window">Signup</span></a></li>
+              </li>
+            </ul>
+          </div>
+    </div>
+  </nav>
+    <br>
+	<br>
+    <div class="mani">
+		<h1 style="color:Black" >Want to Login ? <span class="glyphicon glyphicon-user"></span></h1><br>
+		 <form name ="myForm" action="login.php" method="POST">
+            <label for="fname" style="color : Black">Mobile No:<span style="color:black">*</span></label><br>
+           
+                     <input type="text"  name="mob" placeholder="Mobile number" />       
+             <br>
+            <label for="lname" style="color : black">Password<span style="color:black">*</span></label><br>
+            
+                    <input type="password" name="pass" placeholder="Password" />
+             <br>
+             <input type="submit" value="Submit">
+            <p><a href="signup.html">No account ??</a></p>
+	     </form>
+
+         </div>
+
+
+</body>
+</html>	
+

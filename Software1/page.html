@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets_login/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets_login/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets_login/css/form-elements.css">
+        <link rel="stylesheet" href="assets_login/css/style.css">
+    </head>
+
+    <body style="background-image: url(assets_login/img/bg.jpg)">
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="col-sm-5">
+                        <div class="form-box">
+                       		<div class="form-top">
+	                       		<div class="form-top-left">
+	                       			<h3 style="color:white">Insert into Database</h3>
+	                       		</div>
+	                     		<div class="form-top-right">
+	                        		<i class="fa fa-pencil"></i>
+	                       		</div>
+	                        </div>
+	                        <div class="form-top">
+				                 <form name="myForm" role="form" action="insert.php" method="post">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-name">Name</label>
+			                        	<input type="text" name="form-name" placeholder="Name..." class="form-name form-control" id="form-name" required>
+			                        </div>
+			                        <div class="form-group">
+				                       	<label class="sr-only" for="form-branch">Branch</label>
+				                       	<input type="text" name="form-branch" placeholder="Branch..." class="form-branch form-control" id="form-branch" required>
+				                    </div>
+				                    <div class="form-group">
+				                       	<label class="sr-only" for="form-id">ID</label>
+				                       	<input type="number" name="form-id" placeholder="ID..." class="form-id form-control" id="form-id" required>
+				                    </div>
+				                    <div class="form-group">
+                                        <label class="sr-only" for="form-year">Year</label>
+                                        <input type="number" name="form-year" placeholder="Year..." class="form-year form-control" id="form-year" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-bal">Balance</label>
+                                        <input type="number" name="form-bal" placeholder="Balance..." class="form-bal form-control" id="form-bal" required>
+                                    </div>
+				                    <button type="submit" class="btn">Insert</button>
+			                   </form>
+		                    </div>
+                       	</div>
+                       	
+                    </div>
+
+                    <div class="col-sm-1 middle-border"></div>
+                    <div class="col-sm-1"></div>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3 style="color:white">Update into Database</h3>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-top">
+				                    <form  role="form" action="update.php" method="post">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-id">ID</label>
+				                        	<input type="number" name="form-id" placeholder="ID..." class="form-id form-control" id="form-id" >
+				                        </div>
+				                        <div class="form-group">
+				                    		<label class="sr-only" for="form-branch">Branch</label>
+				                        	<input type="text" name="form-branch" placeholder="Branch..." class="form-branch form-control" id="form-branch" >
+				                        </div>
+				                        <div class="form-group">
+				                    		<label class="sr-only" for="form-bal">Balance</label>
+				                        	<input type="number" name="form-bal" placeholder="Balance..." class="form-bal form-control" id="form-bal" >
+				                        </div>
+				                        <button type="submit" class="btn">Update</button>
+				                    </form>
+			                    </div>
+		                    </div>
+	                        
+                        </div>
+                        
+           			</div>
+                        	
+					<div class="row">
+                        <div class="col-sm-5 col-sm-offset-4">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3 style="color:white">Delete from Database</h3>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-top">
+				                    <form  role="form" action="delete.php" method="post">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-id">ID</label>
+				                        	<input type="number" name="form-id" placeholder="ID..." class="form-id form-control" id="form-id" >
+				                        </div>
+				                        <button type="submit" class="btn">Delete</button>
+				                    </form>
+			                    </div>
+		                    </div>
+	                        
+                        </div>
+                        
+           			</div>
+                   
+            </div>
+        </div>
+           
+    </div>
+
+</body>
+
+</html>

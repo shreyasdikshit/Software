@@ -1,0 +1,29 @@
+body{
+
+    background-color: #ff9933;
+
+}
+.abtheader{
+
+
+    background-image: url('../img/banner-bg.jpg') ;
+    background-repeat:no-repeat;
+    width:100%;
+    /*height:auto;*/
+    font-family:Oleo Script;
+    color:black;
+    text-align:center;
+    padding:10% 30px;
+
+}
+
+.content{
+    padding:100px;
+    padding-top:50px;
+}
+.end{
+    background-color:black;
+    height:74px;
+    text-align:center
+
+}

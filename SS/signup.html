@@ -1,0 +1,143 @@
+<!doctype html>
+<html style="overflow: hidden;">
+<head>
+<title>Sign up</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+	h1
+	{
+	    font-family: "Comic Sans MS", cursive, sans-serif; 
+	    font-size: 50px;  
+	}
+	body
+	{
+	    background-image: url('http://i65.tinypic.com/15mxvmf.jpg');
+	    background-size: 100%;
+	    opacity: 0.9;
+	}
+	input[type=text], select {
+	    width: 40%;
+	    padding: 10px 20px;
+	    margin: 8px 0;
+	    display: inline-block;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+    	background: transparent;
+    	 border: 1px solid black;
+	}
+	input[type=email]{
+	    width: 40%;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    display: inline-block;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+    	background: transparent;
+    	border: 1px solid black;
+	}
+	#ar{
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    display: inline-block;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	}
+	input[type=submit] {
+	    width: 75%;
+	    background-color: #4CAF50;
+	    color: white;
+	    padding: 14px 20px;
+	    margin: 8px 0;
+	    border: none;
+	    border-radius: 16px;
+	    cursor: pointer;
+	}
+	input[type=password]{
+	    width: 40%;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    display: inline-block;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+    	background: transparent;
+    	border: 1px solid black;
+	}
+	input[type=submit] {
+	    background-color: black;
+	    opacity: 0.9;
+	}
+	input[type=checkbox] 
+	{
+	    background:transparent;
+	    border:1px solid black;
+	}
+	.mani
+	{   width: 50%;
+	    height:200px;
+	    margin: 0 auto;
+	}​
+	#nav {
+	    border-radius: 5px;
+	    background-color: black;
+	    padding: 20px;
+	}
+	.container {
+	    padding: 2px 16px;
+	}
+	</style>
+	<script type="text/javascript">
+	    function validateForm() {
+	    var x = document.forms["myForm"]["fname"].value;
+	    if (x == "") {
+	        alert("Name must be filled out");
+	        return false;
+	    }
+	}
+	function fun()
+	{
+		alert("Signed in successfully..");
+	}
+	</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" ><!--color-->
+    <div class="container-fluid">
+    <div class="navbar-header">
+            <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target="#nvb">
+                   <span class = "icon-bar"></span>
+                   <span class = "icon-bar"></span>
+                   <span class = "icon-bar"></span>
+            </button>
+      <a class="navbar-brand" href="index.html">
+              <span style = "color:white"><span style = "color:red">S</span>outhern<span style = "color:red">S</span>picia</span>
+          </a>
+
+    </div>
+          <div class = "collapse navbar-collapse" id = "nvb">
+            <ul class="nav navbar-nav navbar-right" >
+              <li style="font-family: chiller;font-size: 20px;"><a  href="login.html"><span class="glyphicon glyphicon-user">Login</span></a></li>
+             
+              </li>
+            </ul>
+          </div>
+    </div>
+  </nav>
+	<div class="mani">
+	<br>
+	<br>
+	<br>
+		<h1 style="color:black">Sign up <span class="glyphicon glyphicon-new-window"></span></h1><br>
+		 <form action="signup.php" method="POST">
+			   <input type="text" name="fname" placeholder="Firstname" required="required">    
+			    <input type="text" name="lname" placeholder="Lastname" required="required"><br>
+				<input type="text" name="mno" placeholder="Mobile no." maxlength="10" minlength="6" required="required"><br>     
+			    <input type="email" name="email" placeholder="Email-id" required="required"><br>
+			    <input type="password" name="pass" placeholder="Password" minlength="2" required="required">
+			    <br>
+	      	    <input type="submit" onsubmit="fun()" value="GET STARTED">
+	  </form>
+     </div>
+ </body>
+</html>
